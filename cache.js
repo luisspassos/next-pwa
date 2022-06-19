@@ -105,7 +105,7 @@ module.exports = [
   },
   {
     urlPattern: /\/_next\/data\/.+\/.+\.json$/i,
-    handler: 'StaleWhileRevalidate',
+    handler: 'NetworkFirst',
     options: {
       cacheName: 'next-data',
       expiration: {
